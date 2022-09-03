@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_login"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        tools:context=".RegisterActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Screan"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="#F6F6F6" />
+
+
+        <!--  material.textfield
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:background="@drawable/custominput"
+                    app:startIconDrawable="@drawable/ic_baseline_email_24"
+                    app:hintTextColor="@color/black"
+                    android:textColorHint="@color/black"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+                -->
+
+
+        <EditText
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/custominput"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="Email"
+            android:textColorHint="#BCBBBB"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_10sdp"
+            android:textColor="#000"
+
+            />
+
+
+        <EditText
+            android:id="@+id/password_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/custominput"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="Password"
+            android:textColorHint="#BCBBBB"
+            android:inputType="textPassword"
+            android:padding="@dimen/_10sdp"
+            android:textColor="#000"
+
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:onClick="registerpress"
+            android:id="@+id/bottom_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+
+            app:strokeWidth="@dimen/_5sdp"
+            android:background="@drawable/custominput"
+
+            >
+
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+</layout>
